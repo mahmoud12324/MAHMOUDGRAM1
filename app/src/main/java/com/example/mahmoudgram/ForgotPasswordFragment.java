@@ -9,13 +9,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ForgotPasswordFragment {
+public class ForgotPasswordFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private String mParam1;
@@ -51,8 +52,7 @@ public class ForgotPasswordFragment {
         });
     }
 
-    private View getView() {
-    }
+
 
     public ForgotPasswordFragment() {
     }
@@ -76,7 +76,7 @@ public class ForgotPasswordFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_main, container, false);
+        return inflater.inflate(R.layout.forgot_password, container, false);
     }
     @Override
     public void onStart() {
