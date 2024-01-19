@@ -1,12 +1,26 @@
 package com.example.mahmoudgram;
+
+import android.net.Uri;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
+
 public class FirebaseServices {
     private static FirebaseServices instance;
-    private FirebaseAuth auth;
     private FirebaseFirestore fire;
     private FirebaseStorage storage;
+    private FirebaseAuth auth;
+    private Uri selectedImageURL;
+
+    public Uri getSelectedImageURL() {
+        return selectedImageURL;
+    }
+
+    public void setSelectedImageURL(Uri selectedImageURL) {
+        this.selectedImageURL = selectedImageURL;
+    }
+
 
     public static FirebaseServices getInstance() {
         if (instance == null)
@@ -30,5 +44,7 @@ public class FirebaseServices {
         auth = FirebaseAuth.getInstance();
         fire = FirebaseFirestore.getInstance();
         storage = FirebaseStorage.getInstance();
+        selectedImageURL = null;
     }
 }
+

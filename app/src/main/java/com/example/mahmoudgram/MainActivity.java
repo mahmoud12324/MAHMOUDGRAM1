@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
     private EditText etEmail,etPassword;
@@ -34,6 +39,10 @@ if(email.trim().isEmpty()||password.trim().isEmpty())
     Toast.makeText(this, "some feilds are missing!", Toast.LENGTH_SHORT).show();
     return;
 }
+
+// ExampleFragment.java
+
+
 
 
 
