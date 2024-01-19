@@ -59,10 +59,10 @@ public class SignUpFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        etUsernameSIGNUP = getView().findViewById(R.id.etEmailMain);
+        etUsernameSIGNUP = getView().findViewById(R.id. etUsernameSIGNUP);
         fbs = FirebaseServices.getInstance();
-        etPasswordSIGNUP = getView().findViewById(R.id.etPasswordMain);
-        btnSignUpSIGNUP = getView().findViewById(R.id.btnSignupMain);
+        etPasswordSIGNUP = getView().findViewById(R.id.etPasswordSIGNUP);
+        btnSignUpSIGNUP = getView().findViewById(R.id.btnSignUpSIGNUP);
         btnSignUpSIGNUP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

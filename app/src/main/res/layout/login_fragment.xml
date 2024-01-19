@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnSignupMain"
+        android:id="@+id/btnloginMain"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,6 +51,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/etPasswordMain"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -64,7 +65,7 @@
         android:layout_marginEnd="129dp"
         android:layout_marginBottom="6dp"
         android:text="forgot password"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignupMain"
+        app:layout_constraintBottom_toTopOf="@+id/btnloginMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPasswordMain" />
@@ -79,6 +80,7 @@
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toTopOf="@+id/etEmailMain"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/download" />
